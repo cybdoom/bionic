@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+	text-align: center;
+	font-size: 30px;
+	margin: 10px 0 10px 0;
+}
+
+.mainFrame {
+	margin: 0 auto;
+	position: relative;
+    display: block;
+	width: 480px;
+	height: 480px;
+	background-color: #fff;
+	border: 10px outset darkblue;
+	border-radius: 6px;
+}
+.snakeHead, .snakeBody {
+	z-index: 2;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	background-color: red;
+	border-radius: 50px;
+
+}
+.food {
+	z-index: 1;
+	position: relative;
+	width: 10px;
+	height: 10px;
+	background-color: green;
+	border-radius: 50px;
+}
+embed {
+	margin: 0;
+	height: 60px;
+}
+

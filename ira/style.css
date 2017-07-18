@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+	margin: auto;
+	width: 640px;
+	font-family: Arial, sans-serif;
+}
+.map {
+	height: 480px;
+	width: 640px;
+	margin: 8px auto;
+	background-color: #1c201f;
+	position: relative;
+}
+.tank {
+	position: absolute;
+	background-repeat: no-repeat;
+	width: 32px;
+	height: 32px;
+	background-size: cover;
+}
+.tankPlayer1 {
+	background-image: url('img/TankGamer1.jpg');
+}
+.directionUp {
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+.directionRight {
+	-moz-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+	transform: rotate(270deg);
+}
+.directionDown {
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.directionLeft {
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+.tankComputer {
+	position: absolute;
+	background-repeat: no-repeat;
+	width: 32px;
+	height: 32px;
+	background-size: cover;
+	background-image: url('img/TankComputer.jpg');
+}
+.tankBullet {
+	position: absolute;
+	background-color: #f9a449;
+	border-radius: 32px;
+	width: 8px;
+	height: 8px;
+}
+.tankBulletComputer {
+	position: absolute;
+	background-color: #e12b37;
+	border-radius: 32px;
+	width: 8px;
+	height: 8px;
+}
+.board {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+#scorePlayer1, #lifePlayer1 {
+	width: 220px;
+	background-color: #1c201f;
+	line-height: 2;
+	padding: 0 8px;
+}
+#scorePlayer1 {
+	color: #e12b37;
+}
+#lifePlayer1 {
+	color: #f9a449;
+}
+.messenge {
+	background-color: #1c201f;
+	z-index: 999;
+	color: #f9a449;
+	font-size: 48px;
+	text-align: center;
+	line-height: 10;
+}
